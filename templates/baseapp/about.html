@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block content %}
+{%load static %}
+{% include "navbar.html" %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">About us
+                    <small>It's Nice to Meet You!</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'baseapp:index' %}">Home</a>
+                    </li>
+                    <li class="active">About us</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive" src="{% static 'images/slide_1.jpg' %}" style="width: 470px; height: 300px;" >
+            </div>
+            <div class="col-md-6">
+                <h2>Welcome to 'SUNBIZ'</h2>
+                <p>While you might only be interested in learning how to create nice maps and figures for presentations, reports and publications, it is worth remembering that many biological research projects inherently have a spatial component that is worth exploring. This can range from the distribution of sampling sites to survey tracks, movements of individual animals and information about the distribution of specific habitat types.</p>
+                <p>As a result, many biological research projects would benefit from the creation of a GIS to explore spatial relationships within and between the data.  In particular, while some projects can be done without using a GIS, many will be greatly enhanced by using it. The very act of creating a GIS will make you think about the spatial relationships within your data, and will help you formulate hypotheses.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: -10;">
+            <div class="col-lg-12" style="margin-top: -10px; margin-bottom: -5;">
+                <h2 class="page-header">Our Works</h2>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_2.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                    <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_2.jpg' %}"></a>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_6.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_6.jpg' %}"></a>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_7.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_7.jpg' %}"></a>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_10.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_10.jpg' %}"></a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_11.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_11.jpg' %}"></a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="{% static 'images/slide_14.jpg' %}" onclick="window.open(this.href, '_blank', 'width=700,height=520'); return false;">
+                <img class="img-responsive img-customer" src="{% static 'images/수정됨_slide_14.jpg' %}"></a>
+            </div>
+        </div>
+
+        <!-- Team Member Profiles -->
+
+        <div class="row" style="margin-top:-20px; margin-bottom: -20;">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive" src="{% static 'images/001_2.jpg' %}">
+                <h3>Sonia OH
+                    <small>Job Title: blue color</small>
+                </h3>
+                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-responsive" src="{% static 'images/002_2.png' %}">
+                <h3>Yevgeny CHUN
+                    <small>Job Title: Boss</small>
+                </h3>
+                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-responsive" src="{% static 'images/003.gif' %}" style="width: 400px; height: 210px;">
+                <h3>...and etc
+                    <small>friends</small>
+                </h3>
+                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    {% endblock %}

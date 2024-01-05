@@ -1,0 +1,34 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SUNBIZ 썬비즈</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+<body>  
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/modern-business.js' %}"></script>
+
+    {% block script %}
+    {% endblock %}
+    <div class="container">
+        <hr>
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright &copy; Company SUNBIZ 2023</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
