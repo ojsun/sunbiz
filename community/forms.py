@@ -4,15 +4,17 @@ from community.models import Question, Answer, Comment
 class QuestionForm(forms.ModelForm):
     class Meta:
         model=Question
-        fields=['subject','content']
+        fields=['subject','content','image_file']
         # widgets={
         #     'subject': forms.TextInput(attrs={'class':'form-control'}),
         #     'content': forms.Textarea(attrs={'class':'form-control', 'rows': 10})
+        #     'image_file: forms.ImageFile(attrs={'class':'form-control'})
         # }
 
         labels={
             'subject': '제목',
             'content': '내용',
+            'image_file': '이미지'
         }
 
 class AnswerForm(forms.ModelForm):

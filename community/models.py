@@ -7,7 +7,7 @@ class Question(models.Model):
     author=models.ForeignKey(User, on_delete=models.CASCADE)
     subject=models.CharField(max_length=200)
     content=models.TextField()
-    head_image=models.ImageField(upload_to='community/images/%Y/%m/%d/',blank=True, null=True)
+    image_file=models.ImageField(max_length=100,blank=True, null=True)
     create_date=models.DateTimeField()
     modify_date=models.DateTimeField(null=True,blank=True)
 

@@ -38,7 +38,9 @@
                 <th class="text-center"> 제 목 </th>
                 <th class="text-center"> 글쓴이 </th>
                 <th class="text-center"> 작성일시 </th>
+                <th class="text-center"> 이미지 첨부</th>
             </tr>
+
             </thead>
         <tbody>
          {% if question_list %}
@@ -56,6 +58,11 @@
                 </a></td>
                 <td>{{ question.author.username }}</td>
                 <td>{{question.create_date}} </td>
+                <td style="width:100px; height: 40px;">
+                    {% if question.image_file %}
+                    <span class="badge badge-secondary py-1"> O </span>
+                    {%endif%}              
+                </td>
             </tr>
          {% endfor %}
     {% else %}

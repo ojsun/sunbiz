@@ -46,7 +46,7 @@ def detail(request, question_id):
 @login_required(login_url='common:login')
 def question_create(request):
     if request.method =='POST':
-        form=QuestionForm(request.POST)
+        form=QuestionForm(request.POST, request.FILES)
         if form.is_valid():
             question=form.save(commit=False)
             question.author=request.user
