@@ -18,3 +18,4 @@ def portfolio_0(request):
     return render(request, 'baseapp/portfolio-item.html')
 def faq(request):
     return render(request, 'baseapp/faq.html')
+
