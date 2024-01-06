@@ -86,7 +86,7 @@ DATABASES = {
         "NAME": "sunbiz_db",
         "USER": "maria",
         "PASSWORD": "1234",
-        "HOST": "127.0.0.1",
+        "HOST": "127.0.0.1:8000",
         "PORT": 3306,
     }
 }
