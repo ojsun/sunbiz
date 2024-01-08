@@ -82,7 +82,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "sunbiz_db",
-        "USER": "maria",
+        "USER": "root",
         "PASSWORD": "1234",
         "HOST": "svc.sel5.cloudtype.app",
         "PORT": "31731",
