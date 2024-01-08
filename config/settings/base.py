@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-vrn7xah$+e44*xms)-00on_t@&(f9p!2(m@^h(8n&y3#=k6b1=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.26.5.177']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','.cloudtype.app','0.0.0.0']
+CSRF_TRUSTED_ORIGINS=['https://*.cloudtype.app']
 
 
 # Application definition
