@@ -1,7 +1,7 @@
 asgiref==3.5.2
 pip==23.3.1
 setuptools==68.2.2
-django==4.1
+django==4.1.0
 sqlparse==0.4.4
 tzdata==2023.3
 mysqlclient==1.4.6
