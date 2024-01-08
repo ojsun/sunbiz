@@ -10,6 +10,9 @@ class Question(models.Model):
     image_file=models.ImageField(max_length=100,blank=True, null=True)
     create_date=models.DateTimeField()
     modify_date=models.DateTimeField(null=True,blank=True)
+    class Meta:
+        managed = False
+        db_table = 'community_question'
 
 class Answer(models.Model):
     author=models.ForeignKey(User, on_delete=models.CASCADE)
@@ -17,6 +20,9 @@ class Answer(models.Model):
     content=models.TextField()
     create_date=models.DateTimeField()
     modify_date=models.DateTimeField(null=True,blank=True)
+    class Meta:
+        managed = False
+        db_table = 'community_answer'
 
 
 class Comment(models.Model):
@@ -26,6 +32,8 @@ class Comment(models.Model):
     modify_date=models.DateTimeField(null=True,blank=True)
     question=models.ForeignKey(Question, null=True,blank=True, on_delete=models.CASCADE)
     answer=models.ForeignKey(Answer, null=True,blank=True, on_delete=models.CASCADE)
-
+    class Meta:
+        managed = False
+        db_table = 'community_comment'
 
 
