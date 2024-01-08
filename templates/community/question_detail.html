@@ -26,7 +26,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="card-text" id="content" style="float:center;  color: #191919d4; font-size: 14px;">
-                        {{question.content| mark }}
+                        {{question.content|linebreak }}
                     </div>
                     {% if question.image_file %}
                     <div style="margin-top: 15px; margin-bottom: -10px;">
@@ -72,7 +72,7 @@
             <div class="card my-2">
                 <div class="card-body">
                     <div id="content">
-                        {{answer.content |mark }}
+                        {{answer.content |linebreak }}
                     </div>
                     <div class="d-flex justify-content-end">
                         {% if answer.modify_date %}
