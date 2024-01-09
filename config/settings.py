@@ -27,6 +27,9 @@ DEBUG = True
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".cloudtype.app", "0.0.0.0"]
 CSRF_TRUSTED_ORIGINS = ['https://*.cloudtype.app']
 
+STATIC_ROOT=BASE_DIR/ 'static/'
+STATICFILES_DIRS=[]
+
 
 # Application definition
 
