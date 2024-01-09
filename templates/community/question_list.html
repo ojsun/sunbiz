@@ -38,7 +38,7 @@
                 <th class="text-center"> 제 목 </th>
                 <th class="text-center"> 글쓴이 </th>
                 <th class="text-center"> 작성일시 </th>
-                <th class="text-center"> 첨부</th>
+ <!--               <th class="text-center"> 첨부</th>   -->
             </tr>
 
             </thead>
@@ -58,10 +58,10 @@
                 </a></td>
                 <td>{{ question.author.username }}</td>
                 <td>{{question.create_date}} </td>
-                <td >
+   <!--               <td >
                     {% if question.image_file %}
                     <span class="badge badge-secondary py-1"> O </span>
-                    {%endif%}              
+                    {%endif%}    -->            
                 </td>
             </tr>
          {% endfor %}
