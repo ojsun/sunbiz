@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "community",
     "baseapp",
     "service",
-    "common",
+    "common.apps.CommonConfig",,
 ]
 
 MIDDLEWARE = [
